@@ -18,8 +18,8 @@
 		<ul class="icons">
 			<li><a href="https://twitter.com/sudosammy" class="icon fa-twitter" title="Twitter"><span class="label">Twitter</span></a></li>
 			<li><a href="https://github.com/sudosammy/" class="icon fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
-			<li><a href="#" onclick="return toggle('pub-key')" class="icon fa-user-secret" title="Public Key"><span class="label">Public Key</span></a></li>
-			<li><a href="#" onclick="return toggle('email')" class="icon fa-envelope-o"><span class="label" title="Email">Email</span></a></li>
+			<li><a href="#" onclick="event.preventDefault(); return toggle('pub-key')" class="icon fa-user-secret" title="Public Key"><span class="label">Public Key</span></a></li>
+			<li><a href="#" onclick="event.preventDefault(); return toggle('email')" class="icon fa-envelope-o"><span class="label" title="Email">Email</span></a></li>
 		</ul>
 <textarea id="pub-key" style="display: none" readonly spellcheck="false" onclick="size(this); this.select()">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
