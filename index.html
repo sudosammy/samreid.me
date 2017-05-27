@@ -19,7 +19,7 @@
 			<li><a href="https://twitter.com/sudosammy" class="icon fa-twitter" title="Twitter"><span class="label">Twitter</span></a></li>
 			<li><a href="https://github.com/sudosammy" class="icon fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
 			<li><a href="DD08DB85.asc" onclick="event.preventDefault(); return toggle('pub-key')" class="icon fa-user-secret" title="Public Key"><span class="label">Public Key</span></a></li>
-			<li><a href="#" onclick="event.preventDefault(); return toggle('email')" class="icon fa-envelope-o"><span class="label" title="Email">Email</span></a></li>
+			<li><a href="mailto:sam@samreid.me" class="icon fa-envelope-o"><span class="label" title="Email">Email</span></a></li>
 		</ul>
 <textarea id="pub-key" style="display: none" readonly spellcheck="false" onclick="size(this); this.select()">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -72,23 +72,16 @@ WaDeWXnJw/1y0b75Nk5ubWKxwXJl2UU9a35qImur8cqvXkfTzZCj+Zg6JNZk6DuC
 =bFKH
 -----END PGP PUBLIC KEY BLOCK-----
 </textarea>
-		<div id="email" style="display: none">
-			<p>Encrypted&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i> <a href="#" id="sam-mail">to this address</a></p>
-			<p>Plain-text&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i> <a href="#" id="g-mail">to this address</a></p>
-		</div>
-<script type="text/javascript">
-	function size(o) {
-	  o.style.height = "1px";
-	  o.style.height = (5+o.scrollHeight)+"px";
-	}
-	function toggle(id) {
-    var div = document.getElementById(id);
-    div.style.display = div.style.display == "none" ? "block" : "none";
-	}
-	window.onload = function() {
-		document.getElementById('g-mail').href = 'mailto:' + 'samreid.me' + String.fromCharCode(64) + 'gmail' + '.com';
-		document.getElementById('sam-mail').href = 'mailto:' + 'sam' + String.fromCharCode(64) + 'samreid' + '.me';
-	};
-</script>
+
+		<script type="text/javascript">
+			function size(o) {
+			  o.style.height = "1px";
+			  o.style.height = (5+o.scrollHeight)+"px";
+			}
+			function toggle(id) {
+		    var div = document.getElementById(id);
+		    div.style.display = div.style.display == "none" ? "block" : "none";
+			}
+		</script>
 	</body>
 </html>
